@@ -1,3 +1,8 @@
+/**
+ * Formats a number or parseable string as en-US currency.
+ *
+ * Invalid amounts return "$0.00"; formatting failures fall back to a dollar-prefixed value with two decimals.
+ */
 export function formatAmount(value: number | string, currency: string = "USD"): string {
   try {
     const numValue = typeof value === "string" ? parseFloat(value) : value;
@@ -18,4 +23,5 @@ export function formatAmount(value: number | string, currency: string = "USD"): 
   }
 }
 
+/** Alias of formatAmount for currency display. */
 export const formatCurrency = formatAmount;

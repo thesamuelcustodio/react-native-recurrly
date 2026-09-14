@@ -1,5 +1,6 @@
 import {View, Text, TouchableOpacity} from 'react-native'
 
+/** Renders a list section title with a static "View all" action. */
 const ListHeading = ({ title }: ListHeadingProps)  => {
     return (
         <View className="list-head">

@@ -13,6 +13,9 @@ import UpcomingSubscriptionCard from "@/components/UpcomingSubscriptionCard";
 import SubscriptionCard from "@/components/SubscriptionCard";
 const SafeAreaView = styled(RNSafeAreaView);
 
+/**
+ * Renders the subscription dashboard and keeps at most one subscription card expanded.
+ */
 export default function App() {
     const [expandedSubscriptionId, setExpandedSubscriptionId] = useState<string |
         null>(null);

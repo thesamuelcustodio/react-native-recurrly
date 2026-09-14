@@ -3,6 +3,9 @@ import '@/global.css';
 import {useFonts} from "expo-font";
 import {useEffect} from "react";
 
+/**
+ * Loads the bundled fonts before rendering navigation and hides the splash screen once they are ready.
+ */
 export default function RootLayout() {
   const [fontsLoaded] = useFonts({
     'sans-regular': require('../assets/fonts/PlusJakartaSans-Regular.ttf'),

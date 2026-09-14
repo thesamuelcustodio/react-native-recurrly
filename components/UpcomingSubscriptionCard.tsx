@@ -2,6 +2,9 @@ import {View, Text, Image} from 'react-native'
 import React from 'react'
 import {formatCurrency} from "@/lib/utils";
 
+/**
+ * Renders an upcoming renewal, labeling one day or less as the last day.
+ */
 const UpcomingSubscriptionCard = ({ name, price, daysLeft, icon, currency }: UpcomingSubscription)  => {
     return (
         <View className="upcoming-card">
