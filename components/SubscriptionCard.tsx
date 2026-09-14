@@ -4,6 +4,10 @@ import {formatCurrency} from "@/lib/utils";
 import clsx from "clsx";
 import {formatStatusLabel, formatSubscriptionDateTime} from "@/assets/lib/utils";
 
+/**
+ * Renders a subscription summary that invokes `onPress` when pressed and
+ * reveals payment, category, date, and status details when expanded.
+ */
 const SubscriptionCard = ({ name, price, currency, icon, billing, color, category, plan, renewalDate, expanded, onPress, paymentMethod, startDate, status }:
  SubscriptionCardProps) => {
     return (

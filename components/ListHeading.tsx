@@ -1,5 +1,6 @@
 import {View, Text, TouchableOpacity} from 'react-native'
 
+/** Renders a list title alongside a "View all" label. */
 const ListHeading = ({ title }: ListHeadingProps)  => {
     return (
         <View className="list-head">
