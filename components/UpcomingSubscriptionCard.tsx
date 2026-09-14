@@ -2,6 +2,10 @@ import {View, Text, Image} from 'react-native'
 import React from 'react'
 import {formatCurrency} from "@/lib/utils";
 
+/**
+ * Renders an upcoming subscription's price and name, showing a day count only
+ * when more than one day remains and "Last day" otherwise.
+ */
 const UpcomingSubscriptionCard = ({ name, price, daysLeft, icon, currency }: UpcomingSubscription)  => {
     return (
         <View className="upcoming-card">

@@ -1,3 +1,7 @@
+/**
+ * Formats a number or numeric string as an en-US currency value. Invalid input
+ * returns "$0.00"; formatting failures fall back to a dollar-prefixed value.
+ */
 export function formatAmount(value: number | string, currency: string = "USD"): string {
   try {
     const numValue = typeof value === "string" ? parseFloat(value) : value;
